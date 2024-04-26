@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            Zoe's Assignment 2
+        </title>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    </head>
+    
+    <body style="background-color:FFFAEE">
+        
+        <div class="row">
+            <!-- This is a comment. It won't appear in your page -->
+            <!-- This long line contains the code for the image roll 
+                over which swaps in an alternative image. You need to select the extra 
+                code and paste it in for each image. Make sure the page still works after pasting. 
+                Replace the template file names with your own filenames for icons, 
+                the rollover version of icons and sounds.d
+            -->
+
+
+
+            <div class="image-container"><img id="icon1" src="img/icon1.png" onmouseover="this.src='img/icon1-2.png';" onmouseout="this.src='img/icon1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="icon2" src="img/icon2.png" onmouseover="this.src='img/icon2-1.png';" onmouseout="this.src='img/icon2.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="icon3" src="img/icon3.png" onmouseover="this.src='img/icon3-1.png';" onmouseout="this.src='img/icon3.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="icon4" src="img/icon4.png" onmouseover="this.src='img/icon4-1.png';" onmouseout="this.src='img/icon4.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="icon5" src="img/icon5.png" onmouseover="this.src='img/icon5-1.png';" onmouseout="this.src='img/icon5.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="icon6" src="img/icon6.png" onmouseover="this.src='img/icon6-1.png';" onmouseout="this.src='img/icon6.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="icon7" src="img/icon7.png" onmouseover="this.src='img/icon7-1.png';" onmouseout="this.src='img/icon7.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="icon8" src="img/icon8.png" onmouseover="this.src='img/icon8-2.png';" onmouseout="this.src='img/icon8.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="icon9" src="img/icon9.png" onmouseover="this.src='img/icon9-1.png';" onmouseout="this.src='img/icon9.png';" width="200" height="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/icon1.mp3");
+            var sound2 = new buzz.sound("sound/icon2.mp3");
+            var sound3 = new buzz.sound("sound/icon3.mp3");
+            var sound4 = new buzz.sound("sound/icon4.mp3");
+            var sound5 = new buzz.sound("sound/icon5.mp3");
+            var sound6 = new buzz.sound("sound/icon6.mp3");
+            var sound7 = new buzz.sound("sound/icon7.mp3");
+            var sound8 = new buzz.sound("sound/icon8.mp3");
+            var sound9 = new buzz.sound("sound/icon9.mp3");
+
+            window.onload = function() {
+                document.getElementById('icon1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('icon3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('icon4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('icon5').addEventListener('click', function () {sound5.play();});
+                document.getElementById('icon6').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('icon7').addEventListener('click', function () {sound7.play();});
+                document.getElementById('icon8').addEventListener('click', function () {sound8.play();});
+                document.getElementById('icon9').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
+
